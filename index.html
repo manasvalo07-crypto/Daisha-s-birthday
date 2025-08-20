@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Daisha! 🎂</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Background Canvas for Confetti -->
+    <canvas id="confetti-canvas"></canvas>
+    
+    <!-- Floating Balloons -->
+    <div class="balloons-container">
+        <div class="balloon balloon-1">🎈</div>
+        <div class="balloon balloon-2">🎈</div>
+        <div class="balloon balloon-3">🎈</div>
+        <div class="balloon balloon-4">🎈</div>
+        <div class="balloon balloon-5">🎈</div>
+    </div>
+
+    <!-- Music Toggle -->
+    <button id="music-toggle" class="music-btn">🎵</button>
+    <audio id="background-music" loop>
+        <source src="https://www.soundjay.com/misc/sounds/bell-ringing-05.wav" type="audio/wav">
+    </audio>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-link">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#gallery" class="nav-link">Gallery</a>
+            <a href="#wishes" class="nav-link">Wishes</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="typing-text" data-text="Happy Birthday, Daisha! 🎂🎉"></span>
+            </h1>
+            <p class="hero-subtitle">Today is all about celebrating YOU!</p>
+            <button id="surprise-btn" class="surprise-btn">
+                <span>🎁 Click for a Surprise! 🎁</span>
+            </button>
+        </div>
+        <div class="sparkles"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Our Amazing Daisha</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Today we celebrate someone truly special - a person who brings joy, laughter, and sunshine wherever she goes. Daisha, your kindness touches everyone around you, and your smile can light up any room.</p>
+                    <p>You're not just getting older, you're getting more awesome! Here's to another year of adventures, dreams coming true, and making beautiful memories.</p>
+                    <div class="birthday-stats">
+                        <div class="stat">
+                            <span class="stat-number" data-target="100">0</span>
+                            <span class="stat-label">% Awesome</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-target="365">0</span>
+                            <span class="stat-label">Days of Joy Ahead</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-target="∞">0</span>
+                            <span class="stat-label">Reasons to Smile</span>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+   
+     
+
+    <!-- Wishes Section -->
+    <section id="wishes" class="wishes">
+        <div class="container">
+            <h2 class="section-title">Birthday Wishes</h2>
+            <div class="wishes-content">
+                <form id="wish-form" class="wish-form">
+                    <input type="text" id="wish-name" placeholder="Your Name" required>
+                    <textarea id="wish-message" placeholder="Write your birthday wish for Daisha..." required></textarea>
+                    <button type="submit">Send Wish 💌</button>
+                </form>
+                <div id="wishes-display" class="wishes-display">
+                    <!-- Wishes will be displayed here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Birthday Modal -->
+    <div id="birthday-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="cake-container">
+                <div class="cake">
+                    <div class="cake-layer cake-bottom"></div>
+                    <div class="cake-layer cake-middle"></div>
+                    <div class="cake-layer cake-top"></div>
+                    <div class="candle">
+                        <div class="flame"></div>
+                    </div>
+                </div>
+            </div>
+            <h3>Make a Wish, Daisha! 🌟</h3>
+            <p>Blow out the candle by clicking on it!</p>
+            <button id="blow-candle" class="blow-btn">💨 Blow Candle</button>
+        </div>
+    </div>
+
+    <!-- Fireworks Container -->
+    <div id="fireworks-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
